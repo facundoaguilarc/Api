@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: url(fondo.jpg) center/cover no-repeat;
+    margin-top: 5%;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+.contenedorPokemon {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.itemGrid {
+    background: rgb(0, 0, 0);
+    border: 1px solid #545454;
+    border-radius: 20%;
+    color: rgb(252, 255, 240);
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 0.3s, cursor 0.3s; /* Agregar transición a transform y cursor */
+}
+
+.itemGrid:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
